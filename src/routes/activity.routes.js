@@ -9,6 +9,7 @@ router.use(authMiddleware);
 // CRUD Routes
 router.get('/', activityController.getAllActivities);
 router.get('/summary', activityController.getDashboardSummary);
+router.get('/analytics', activityController.getAnalytics);  // Add this line
 router.get('/:id', activityController.getActivityById);
 router.post('/', activityController.createActivity);
 router.put('/:id', activityController.updateActivity);
